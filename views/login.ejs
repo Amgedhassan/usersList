@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap-social.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+    <div class="panel">
+        <h1>SIGN IN</h1>
+        <hr>
+        <form action="/login" method="post">
+            <label>Email:</label><br />
+            <input type="email" name="email" required placeholder="Email"><br />
+            <label>Password:</label><br />
+            <input type="password" name="password" required placeholder="Password"><br />
+            <button class="btn btn-info" type="submit">Login</button>
+        </form>
+        <div>
+            <p>Don't have an account<a class="login-link" href="/register"> Sign up</a></p>
+        </div>
+    </div>
+    <div class="panel-social">
+        <a href="/auth/google" class="btn social-button btn-large btn-google"><i class="fab fa-google"></i> Login with Google account</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/bootstrap-social.css">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+    <div class="panel">
+        <h1>SIGN UP</h1>
+        <hr>
+        <form action="/users" method="post">
+            <label>User Name:</label><br />
+            <input type="text" name="uname" required placeholder="User Name"><br />
+            <label>First Name:</label><br />
+            <input type="text" name="fname" required placeholder="First Name"><br />
+            <label>Last Name:</label><br />
+            <input type="text" name="lname" required placeholder="Last Name"><br />
+            <label>Email:</label><br />
+            <input type="email" name="email" required placeholder="Email"><br />
+            <label>Password:</label><br />
+            <input type="password" name="password" required placeholder="Password"><br />
+            <label>Phone Number:</label><br />
+            <input type="tel" name="phone" required placeholder="Phone Number"><br />
+            <label>Birthday:</label><br />
+            <input type="date" name="birthday" required placeholder="Birthday"><br />
+            <button class="btn btn-info" type="submit">Sign up</button>
+        </form>
+        <div>
+            <p>Log in with your account <a class="login-link" href="/login">Sign in</a></p>
+        </div>
+    </div>
+    <div class="panel-social">
+        <a href="/auth/google" class="btn social-button btn-large btn-google"><i class="fab fa-google"></i> Sign Up with Google account</a>
+    </div>
+</body>
+
+</html>
